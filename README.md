@@ -1,18 +1,56 @@
-# to_do_app
 
-A new Flutter project.
 
-## Getting Started
+# Navigation Demo App
+=======================
 
-This project is a starting point for a Flutter application.
+A basic Flutter app demonstrating navigation between screens.
 
-A few resources to get you started if this is your first Flutter project:
+## Overview
+------------
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This app showcases a simple navigation flow between two screens: `HomeScreen` and `SecondScreen`. The app uses Flutter's built-in `Navigator` class to push and pop screens.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Flutter_Navigation_Basics
-# Flutter_Navigation_Basics
+### Features
+------------
+
+* Navigation from `HomeScreen` to `SecondScreen` using a button press
+* Return navigation from `SecondScreen` to `HomeScreen` using a button press
+* Demonstration of passing data back to the previous screen using `Navigator.pop`
+
+### Screens
+------------
+
+#### HomeScreen
+
+* Displays a logo image
+* Contains a button to navigate to `SecondScreen`
+* Has a bottom navigation bar with three items: Home, Cache, and Open Dialog
+
+#### SecondScreen
+
+* Displays a title bar with the text "Second Screen"
+* Contains a button to return to `HomeScreen` with a message
+
+### Code Structure
+------------------
+
+The app's code is organized into two main files:
+
+* `lib/main.dart`: The main entry point of the app, containing the `MaterialApp` widget and the navigation flow.
+* `lib/screens/home.dart`: Contains the `HomeScreen` and `SecondScreen` widgets.
+
+### Running the App
+--------------------
+
+To run the app, simply open the project in your preferred IDE and run the `main.dart` file.
+
+### Example Use Cases
+----------------------
+
+* Tap the "Go to Second Screen" button on `HomeScreen` to navigate to `SecondScreen`.
+* Tap the "Go Back" button on `SecondScreen` to return to `HomeScreen` with a message.
+
+### Notes
+----------
+
+This app is intended as a basic demonstration of navigation in Flutter and is not meant to be a production-ready app.
